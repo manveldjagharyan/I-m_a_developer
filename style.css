@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h1>span {
+    position: relative;
+    display: inline-block;
+    color: #ff8800;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+
+h1>span>span {
+    display: block;
+    animation: animateWord 6s infinite ease;
+}
+
+@keyframes animateWord {
+    0%{transform: translateY(0%);}
+    25%{transform: translateY(-100%);}
+    50%{transform: translateY(-200%);}
+    75%{transform: translateY(-300%);}
+    100%{transform: translateY(-400%);}
+}
